@@ -1,7 +1,6 @@
 # user-anarchy
 a simple ruby tool for generating username for pentesting
 
-<<<<<<< HEAD
 # Steps To Run This Tool On Mac:
 - git clone https://github.com/code-developers/user-anarchy
 - cd user-anarchy
@@ -22,5 +21,4 @@ a simple ruby tool for generating username for pentesting
 - cd user-anarchy
 - sudo chmod +x *
 - ruby username.rb
-=======
->>>>>>> 160f351247c1d3de7194a9460192a61c9870a305
+
