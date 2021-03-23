@@ -33,7 +33,16 @@ describe "#generate_username2" do
   end
 
   describe "#generate_username3" do
-    it "adds the last two digits of the birth year to the username"
+    it "adds the last two digits of the birth year to the username" do
+      expect( generate_username3("andrew", "smith", 1945) ).to eq "asmit45"
+      expect( generate_username3("andrew", "smith", 2000) ).to eq "asmit00"
+      expect( generate_username3("andrew", "smith", 2001) ).to eq "asmit01"
+    end
+    it "only allows for a 4 digit year" do
+      expect( generate_username3("andrew", "smith", 45) ).to eq nil
+      expect( generate_username3("andrew", "smith", 123) ).to eq nil
+      expect( generate_username3("andrew", "smith", 20111) ).to eq nil
+    end
   end
 
 
