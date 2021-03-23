@@ -22,3 +22,10 @@ a simple ruby tool for generating username for pentesting
 - sudo chmod +x *
 - ruby username.rb
 
+# output
+- andrew smith 1978 --> asmith78
+- andrew smith 1978 --> asmith78_1
+- andrew smith 1978 --> asmith78_2
+- andrew smith 1978 1 --> seller-asmith78_1
+- andrew smith 1978 2 --> manager-asmith78_1
+- andrew smith 1978 3 --> admin-asmith78_1
