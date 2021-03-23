@@ -58,7 +58,19 @@ describe "#generate_username2" do
     end
   end
 
-
+  describe "#generate_username4" do
+    it "prefixes the username with a user type based on privilege level" do
+      expect( generate_username4("andrew", "smith", 1945, 1) ).to eq "seller-jdoe45"
+      expect( generate_username4("andrew", "smith", 1945, 2) ).to eq "manager-jdoe45"
+      expect( generate_username4("andrew", "smith", 1945, 3) ).to eq "admin-jdoe45"
+    end
+    it "does not prefix a user with a user type" do
+      expect( generate_username4("andrew", "smith", 1945, 0) ).to eq "jdoe45"
+    end
+    it "assumes the type is a user if none is specified" do
+      expect( generate_username4("andrew", "smith", 1945) ).to eq "jdoe45"
+    end
+  end
 
 
 end
