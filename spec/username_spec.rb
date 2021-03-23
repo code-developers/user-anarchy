@@ -45,6 +45,21 @@ describe "#generate_username2" do
     end
   end
 
+  describe "#check_privilege" do
+    let (:user_types) { ["user", "seller", "manager", "admin"]}
+
+    it "returns the corresponding privilege prefix" do
+      i = 0
+      user_types.each_with_index do |utype, i|
+        expect( check_privilege(i)).to eq utype
+      end
+
+      expect( check_privilege).to eq user_types[0]
+    end
+  end
+
+
+
 
 end
 
