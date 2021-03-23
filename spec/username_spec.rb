@@ -72,6 +72,16 @@ describe "#generate_username2" do
     end
   end
 
+  describe "#generate_username5" do
+    it "acts normally if there is no name conflict" do
+      expect( generate_username5("andrew", "smith", 1945) ).to eq "asmith45"
+    end
+    it "ensures the uniquness of usernames" do
+      expect( generate_username5("andrew", "smith", 1945) ).to eq "asmith45_1"
+      expect( generate_username5("andrew", "smith", 1945) ).to eq "asmith45_2"
+      expect( generate_username5("andrew", "smith", 1945) ).to eq "asmith45_3"
+    end
+  end
 
 end
 
