@@ -27,3 +27,21 @@ def generate_username4(first, last, year, type=0)
 end
 
 $users = []
+
+def generate_username5(first, last, year)
+  #generate a username
+  user = generate_username4(first, last, year)
+  unless $users.include?(user)
+    $users << user
+    return user
+  end
+  user_is_not_unique = true
+
+  i = 1
+
+  while user_is_not_unique do
+    new_username = user + "-" + i.to_s
+    i += 1
+
+  end
+end
