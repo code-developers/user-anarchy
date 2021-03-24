@@ -30,3 +30,7 @@ a simple ruby tool for generating username for pentesting
 - andrew smith 1978 2 --> manager-asmith78_1
 - andrew smith 1978 3 --> admin-asmith78_1
 
+# tool authors:
+- krishpranav | github.com/krishpranav
+- sankar | https://github.com/Sankar-2006
+- visakan | https://github.com/Fishkutty
