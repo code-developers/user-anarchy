@@ -29,3 +29,4 @@ a simple ruby tool for generating username for pentesting
 - andrew smith 1978 1 --> seller-asmith78_1
 - andrew smith 1978 2 --> manager-asmith78_1
 - andrew smith 1978 3 --> admin-asmith78_1
+
